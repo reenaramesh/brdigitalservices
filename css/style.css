@@ -473,7 +473,7 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/carousel-1.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -489,4 +489,20 @@ h6,
     .footer-about {
         margin-bottom: -75px;
     }
+}
+
+/* All navbar links color */
+.navbar .nav-link {
+    color: #1E90FF !important; /* Blue color */
+    transition: color 0.3s;
+}
+
+/* Active link (optional) */
+.navbar .nav-link.active {
+    color: #1E90FF !important; /* Same blue for active */
+}
+
+/* On hover */
+.navbar .nav-link:hover {
+    color: #104E8B !important; /* Darker blue on hover */
 }
