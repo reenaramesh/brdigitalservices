@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Web designing</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    :root{--accent:#ff7a00;--muted:#6b7280;--bg:#f8fafc;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;line-height:1.5;color:#111827;margin:0;background:var(--bg)}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#ffb86b);display:flex;align-items:center;justify-content:center;color:#111827;font-weight:700}
+    nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;margin-top:12px}
+    .hero-card{background:var(--card);padding:28px;border-radius:12px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    h1{font-size:28px;margin:0 0 10px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-ghost{background:transparent;border:2px solid rgba(17,24,39,0.06);color:var(--muted)}
+
+    .grid{display:grid;gap:18px}
+    .services{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:#fef3e0;color:#111827;font-weight:700;font-size:13px}
+
+    .process{display:flex;flex-direction:column;gap:12px}
+    .process-step{display:flex;gap:12px;align-items:flex-start}
+    .step-num{width:40px;height:40px;border-radius:8px;background:#fff7ed;color:#111827;display:flex;align-items:center;justify-content:center;font-weight:800}
+
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    footer{margin-top:28px;padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6e9ef;font-size:15px}
+
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 420px}
+      h1{font-size:34px}
+    }
+
+       .hero-card { text-align:center; margin-bottom:50px; }
+  .cta-row a { margin:0 10px; }
+  .process-step { text-align:left; margin-bottom:8px; }
+  .step-num { font-weight:bold; margin-right:6px; }
+  .counter { font-size:2.5rem; font-weight:bold; }
+  .accordion-button:not(.collapsed) { background-color: #eef2f6; }
+  </style>
+
+    <style>
+.process-diagram .process-step {
+position: relative;
+padding-left: 40px;
+text-align: left;
+font-weight: 500;
+}
+.process-diagram .process-step .step-num {
+position: absolute;
+left: 0;
+top: 0;
+width: 30px;
+height: 30px;
+line-height: 30px;
+border-radius: 50%;
+background-color: #007bff;
+color: white;
+font-weight: bold;
+}
+.process-diagram.text-success .step-num { background-color: #28a745; }
+.process-diagram.text-info .step-num { background-color: #17a2b8; }
+.process-diagram.text-warning .step-num { background-color: #ffc107; }
+
+.counter {
+font-size: 2.5rem;
+font-weight: bold;
+}
+.client-carousel img {
+max-height: 60px;
+}
+
+</style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Service",
+    "name":"Website Designing Services",
+    "provider":{
+      "@type":"Organization",
+      "name":"BR Digital Services",
+      "url":"https://example.com"
+    },
+    "description":"Responsive, SEO-friendly websites for businesses in Bangalore. Packages start at ₹7,999.",
+    "serviceType":"Web Design",
+    "areaServed":"Bangalore"
+  }
+  </script>
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link active">Services</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                            <a href="feature.html" class="dropdown-item">Our features</a>
+                            <a href="team.html" class="dropdown-item">Team Members</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                <a href="https://htmlcodex.com/startup-company-website-template" class="btn btn-primary py-2 px-4 ms-3">Download Pro Version</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Services</h1>
+                    <a href="" class="h5 text-white">Home</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="" class="h5 text-white">Services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+    <!-- Services Offered Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary text-uppercase">Our Digital Services</h2>
+      <h5 class="text-dark">Helping Your Business Grow Online</h5>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-laptop-code fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Web Designing</h5>
+          <p>Create stunning, responsive, and SEO-friendly websites that drive engagement and conversions.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-search fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">SEO Services</h5>
+          <p>Boost your website's visibility on search engines and attract organic traffic with our expert SEO strategies.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-share-alt fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Social Media Marketing (SMM)</h5>
+          <p>Engage and grow your audience across platforms like Facebook, Instagram, LinkedIn, and more.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-bullseye fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">PPC Advertising</h5>
+          <p>Drive instant traffic and leads with targeted pay-per-click campaigns on Google, YouTube, and social media.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+<!-- Services Offered Section End -->
+
+<!--    &lt;!&ndash; Service Start &ndash;&gt;-->
+<!--    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">-->
+<!--        <div class="container ">-->
+<!--            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">-->
+<!--                <h3 class="fw-bold text-primary text-uppercase">Professional Website Designing Services in Bangalore</h3>-->
+<!--                <h5 class="mb-0 text-center ">Empowering Your Digital Growth with Stunning, Responsive Websites</h5>-->
+<!--            </div>-->
+<!--            <p class="m-0 text-center">At BR Digital Services, we specialize in creating visually appealing and high-performing websites that help-->
+<!--                your business stand out online. Whether you’re a startup, small business, or established brand, our expert web designers-->
+<!--                craft digital experiences that attract visitors and turn them into loyal customers — all at an affordable price starting from ₹7,999.</p>-->
+<!--            </br>-->
+<!--            <div class="row g-5">-->
+<!--                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">-->
+<!--                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">-->
+<!--                        <div class="service-icon">-->
+<!--                            <i class="fa fa-shield-alt text-white"></i>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-3">Business Websites</h4>-->
+<!--                        <p class="m-0">Build a professional online presence that boosts credibility and attracts customers which increases the number of leads.</p>-->
+<!--                        <a class="btn btn-lg btn-primary rounded" href="">-->
+<!--                            <i class="bi bi-arrow-right"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">-->
+<!--                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">-->
+<!--                        <div class="service-icon">-->
+<!--                            <i class="fa fa-chart-pie text-white"></i>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-3">Portfolio Websites</h4>-->
+<!--                        <p class="m-0">Showcase your work & impress potential clients.Preferred for students & working professionals</p>-->
+<!--                        <a class="btn btn-lg btn-primary rounded" href="">-->
+<!--                            <i class="bi bi-arrow-right"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">-->
+<!--                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">-->
+<!--                        <div class="service-icon">-->
+<!--                            <i class="fa fa-code text-white"></i>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-3">Landing Pages</h4>-->
+<!--                        <p class="m-0">Drive conversions with a focused, high-impact landing page design which includes everything in a single page.</p>-->
+<!--                        <a class="btn btn-lg btn-primary rounded" href="">-->
+<!--                            <i class="bi bi-arrow-right"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">-->
+<!--                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">-->
+<!--                        <div class="service-icon">-->
+<!--                            <i class="fab fa-android text-white"></i>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-3">Ecommerce Website</h4>-->
+<!--                        <p class="m-0">Launch your online store with multiple number of products with secure payments & easy product management.</p>-->
+<!--                        <a class="btn btn-lg btn-primary rounded" href="">-->
+<!--                            <i class="bi bi-arrow-right"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">-->
+<!--                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">-->
+<!--                        <div class="service-icon">-->
+<!--                            <i class="fa fa-search text-white"></i>-->
+<!--                        </div>-->
+<!--                        <h4 class="mb-3">Personal or Blog Websites</h4>-->
+<!--                        <p class="m-0">Share your story, passion, or brand with a clean personal website. Transform your passion into business</p>-->
+<!--                        <a class="btn btn-lg btn-primary rounded" href="">-->
+<!--                            <i class="bi bi-arrow-right"></i>-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">-->
+<!--                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">-->
+<!--                        <h3 class="text-white mb-3">Call Us For Quote</h3>-->
+<!--                        <p class="text-white mb-3">Call or Whatsapp to get more details and info about price and website categories</p>-->
+<!--                        <h2 class="text-white mb-0">+91-9986752890</h2>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- Service End -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container ">
+      <section class="hero-card">
+        <span class="kicker">Website Designing in Bangalore</span>
+        <h1>Build a Stunning Website That Drives Results</h1>
+        <p class="lead">We design visually appealing, responsive, and SEO-optimized websites that convert visitors into customers. From corporate sites to e-commerce and landing pages — we handle it all.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Request a Free Quote</a>
+          <a class="btn btn-ghost" href="#services">View Services</a>
+        </div>
+
+        <hr style="margin:18px 0;border:none;border-top:1px solid #eef2f6">
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <div style="min-width:140px">
+            <strong>Starting Price</strong>
+            <div>₹7,999</div>
+          </div>
+          <div style="min-width:180px">
+            <strong>Delivery</strong>
+            <div>2–7 business days (typical)</div>
+          </div>
+        </div>
+      </section>
+        </div>
+    </div>
+
+
+
+
+<!-- Website Designing Service Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary text-uppercase">Website Designing Services in Bangalore</h2>
+      <h5 class="text-dark">Empowering Your Digital Growth with Responsive, SEO-Friendly Websites</h5>
+    </div>
+    <div class="text-center mb-4">
+      <p class="lead">At <strong>BR Digital Services</strong>, we craft professional, mobile-responsive websites tailored to your business goals. Whether you're a startup, entrepreneur, or brand, we help you establish a strong online presence — starting from just ₹7,999.</p>
+    </div>
+
+    <!-- Service Cards -->
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-briefcase fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Business Websites</h5>
+          <p>Create a professional identity for your company and attract new clients with a fully responsive website.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-user-circle fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Portfolio Websites</h5>
+          <p>Showcase your talent or projects elegantly — perfect for freelancers, photographers, and designers.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-shopping-cart fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">E-commerce Websites</h5>
+          <p>Sell your products online with a secure, user-friendly, and high-performing online store.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card h-100 text-center border-0 shadow-sm p-4">
+          <i class="fa fa-laptop-code fa-3x text-primary mb-3"></i>
+          <h5 class="fw-bold">Landing Pages</h5>
+          <p>Drive conversions with optimized landing pages tailored for marketing campaigns and promotions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Additional Website Types (Swipeable on Mobile) -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="mt-5">
+      <h4 class="text-center mb-4 text-primary">Other Website Types We Offer</h4>
+      <div class="d-flex flex-nowrap overflow-auto pb-3" style="gap: 1rem;">
+        <div class="card flex-shrink-0 p-4 text-center shadow-sm" style="min-width: 250px;">
+          <i class="fa fa-blog fa-2x text-primary mb-2"></i>
+          <h6>Personal / Blog Websites</h6>
+          <p class="small">Express yourself with a stylish personal or blogging platform.</p>
+        </div>
+        <div class="card flex-shrink-0 p-4 text-center shadow-sm" style="min-width: 250px;">
+          <i class="fa fa-graduation-cap fa-2x text-primary mb-2"></i>
+          <h6>Educational Websites</h6>
+          <p class="small">Create an informative platform for schools, coaching centers, or institutions.</p>
+        </div>
+        <div class="card flex-shrink-0 p-4 text-center shadow-sm" style="min-width: 250px;">
+          <i class="fa fa-hand-holding-heart fa-2x text-primary mb-2"></i>
+          <h6>NGO / Charity Websites</h6>
+          <p class="small">Engage supporters and manage campaigns for your social initiatives.</p>
+        </div>
+        <div class="card flex-shrink-0 p-4 text-center shadow-sm" style="min-width: 250px;">
+          <i class="fa fa-newspaper fa-2x text-primary mb-2"></i>
+          <h6>News / Magazine Websites</h6>
+          <p class="small">Publish articles, blogs, or media updates in an organized format.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="mt-5 text-center">
+      <h4 class="text-primary mb-4">Why Choose BR Digital Services?</h4>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <i class="fa fa-lightbulb fa-2x text-primary mb-3"></i>
+            <h6 class="fw-bold">Creative & Modern Designs</h6>
+            <p>We design websites that are visually appealing and aligned with your brand identity.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <i class="fa fa-mobile-alt fa-2x text-primary mb-3"></i>
+            <h6 class="fw-bold">Fully Responsive</h6>
+            <p>Your website will look perfect on all devices — mobile, tablet, and desktop.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <i class="fa fa-search-dollar fa-2x text-primary mb-3"></i>
+            <h6 class="fw-bold">SEO Optimized</h6>
+            <p>Our websites are built with SEO best practices to help you rank higher on Google.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Call to Action -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="text-center mt-5 p-5 bg-primary rounded text-white">
+      <h3>Get a Free Consultation Today</h3>
+      <p>Let’s discuss your business goals and create a website that drives growth.</p>
+      <a href="tel:+919986752890" class="btn btn-light mt-2 px-4 py-2 fw-bold"><i class="bi bi-telephone"></i> Call Us: +91 99867 52890</a>
+    </div>
+  </div>
+
+</section>
+    </div>
+<!-- Website Designing Service Section End -->
+
+<!-- SEO Brief Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold text-primary mb-3">Search Engine Optimization (SEO)</h2>
+    <p class="lead">Our SEO services help your website rank higher on Google and other search engines, driving more organic traffic and potential customers.</p>
+
+    <div class="row mt-4 justify-content-center">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <h5 class="fw-bold">Importance of SEO</h5>
+          <p>SEO is crucial for increasing online visibility, attracting qualified traffic, enhancing credibility, and generating leads. A well-optimized website helps your business stay competitive in the digital landscape.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <h5 class="fw-bold">How We Do It</h5>
+          <p>We perform comprehensive keyword research, optimize on-page elements, build high-quality backlinks, enhance site speed, and follow the latest SEO best practices to ensure sustainable growth and higher search rankings.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <h5 class="fw-bold">Key Features of SEO</h5>
+          <ul class="list-unstyled mb-0">
+            <li>🔹 Keyword Optimization</li>
+            <li>🔹 On-Page & Technical SEO</li>
+            <li>🔹 Backlink Building</li>
+            <li>🔹 Mobile-Friendly & Responsive Design</li>
+            <li>🔹 Performance Monitoring & Analytics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-primary mt-3">Learn More About SEO</a>
+  </div>
+</section>
+    </div>
+<!-- SEO Brief Section End -->
+
+
+
+
+    <!-- Social Media Marketing Detailed Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold text-primary mb-3">Social Media Marketing (SMM)</h2>
+    <p class="lead">We help your business grow and engage audiences on social media platforms with targeted strategies and optimized campaigns.</p>
+
+    <!-- Facebook Marketing -->
+    <div class="my-5">
+      <h3 class="fw-bold text-dark mb-3">Facebook Marketing</h3>
+      <p>Facebook remains one of the most powerful platforms for businesses to reach a large audience and engage with them effectively.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Importance</h5>
+            <p>Enhances brand awareness, builds trust with customers, and generates leads through organic and paid campaigns.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">How We Do It</h5>
+            <p>We create engaging posts, manage your Facebook page, run targeted ad campaigns, and analyze performance to improve ROI.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Features</h5>
+            <ul class="list-unstyled mb-0">
+              <li>🔹 Page Optimization</li>
+              <li>🔹 Content Creation & Posting</li>
+              <li>🔹 Targeted Ad Campaigns</li>
+              <li>🔹 Analytics & Reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Instagram Marketing -->
+    <div class="my-5">
+      <h3 class="fw-bold text-dark mb-3">Instagram Marketing</h3>
+      <p>Instagram is perfect for visual storytelling and engaging younger audiences through creative content and campaigns.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Importance</h5>
+            <p>Boosts brand visibility, encourages audience interaction, and drives traffic to your website or product pages.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">How We Do It</h5>
+            <p>We design visually appealing posts, stories, and reels, manage posting schedules, run targeted ads, and monitor performance metrics.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Features</h5>
+            <ul class="list-unstyled mb-0">
+              <li>🔹 Content Creation & Reels</li>
+              <li>🔹 Story & Post Scheduling</li>
+              <li>🔹 Instagram Ads Campaigns</li>
+              <li>🔹 Audience Analytics & Insights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-primary mt-3">Learn More About SMM</a>
+  </div>
+</section>
+    </div>
+<!-- Social Media Marketing Detailed Section End -->
+
+
+    <!-- Google Services Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold text-primary mb-3">Google Services</h2>
+    <p class="lead">We offer a comprehensive suite of Google services including GMB setup, maintenance, Google Ads, Analytics, and Search Console to boost your online presence.</p>
+
+    <!-- Google My Business -->
+    <div class="my-5">
+      <h3 class="fw-bold text-dark mb-3">Google My Business (GMB)</h3>
+      <p>Optimize your local search presence and appear in Google Maps searches for your business.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Importance</h5>
+            <p>Improves local search visibility, attracts nearby customers, and increases credibility for your business.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">How We Do It</h5>
+            <p>We create and optimize your GMB profile, manage listings, add accurate business details, and monitor performance insights.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Features</h5>
+            <ul class="list-unstyled mb-0">
+              <li>🔹 Profile Creation & Verification</li>
+              <li>🔹 Business Info Optimization</li>
+              <li>🔹 Regular Updates & Posts</li>
+              <li>🔹 Review Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Ads -->
+    <div class="my-5">
+      <h3 class="fw-bold text-dark mb-3">Google Ads</h3>
+      <p>Run targeted campaigns to drive traffic, leads, and conversions instantly.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Importance</h5>
+            <p>Reach potential customers actively searching for products/services and maximize ROI through paid advertising.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">How We Do It</h5>
+            <p>We conduct keyword research, set up campaigns, monitor performance, optimize ad spend, and ensure effective targeting.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Features</h5>
+            <ul class="list-unstyled mb-0">
+              <li>🔹 Search Ads</li>
+              <li>🔹 Display Ads</li>
+              <li>🔹 Remarketing Campaigns</li>
+              <li>🔹 Conversion Tracking & Reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Analytics & Search Console -->
+    <div class="my-5">
+      <h3 class="fw-bold text-dark mb-3">Google Analytics & Search Console</h3>
+      <p>Measure, monitor, and optimize your website performance to make data-driven decisions.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Importance</h5>
+            <p>Understanding website traffic, user behavior, and performance helps improve SEO, marketing campaigns, and conversions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">How We Do It</h5>
+            <p>We set up Google Analytics and Search Console, configure goals and events, monitor traffic, and provide actionable insights.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <h5 class="fw-bold">Features</h5>
+            <ul class="list-unstyled mb-0">
+              <li>🔹 Traffic Analysis</li>
+              <li>🔹 Goal & Conversion Tracking</li>
+              <li>🔹 Search Performance Monitoring</li>
+              <li>🔹 Insights & Reporting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#contact" class="btn btn-primary mt-3">Learn More About Google Services</a>
+  </div>
+</section>
+    </div>
+<!-- Google Services Section End -->
+
+
+<!-- Animated Counters Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 bg-primary text-white text-center">
+<div class="container">
+<div class="row g-4">
+<div class="col-md-3">
+<div class="counter">100+</div>
+<div>Websites Delivered</div>
+</div>
+<div class="col-md-3">
+<div class="counter">50+</div>
+<div>Clients Served</div>
+</div>
+<div class="col-md-3">
+<div class="counter">200+</div>
+<div>SEO Projects Completed</div>
+</div>
+<div class="col-md-3">
+<div class="counter">150+</div>
+<div>SMM Campaigns Run</div>
+</div>
+</div>
+</div>
+</section>
+    </div>
+
+    <!-- FAQ Section Start -->
+<!-- FAQ Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5">
+  <div class="container">
+    <h2 class="fw-bold text-primary text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <!-- Website Design FAQ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">What is the starting price for a website?</button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Our website design services start from ₹7,999, depending on complexity, features, and design requirements. We provide custom solutions tailored to your business needs.</div>
+        </div>
+      </div>
+      <!-- Delivery Timeline FAQ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">How long does it take to build a website?</button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Typically 2–7 business days depending on website type (landing page, portfolio, e-commerce) and required features. Complex projects may take longer.</div>
+        </div>
+      </div>
+      <!-- SEO FAQ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Do you offer ongoing SEO support?</button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, we provide continuous SEO services including keyword optimization, content strategy, link building, and performance tracking to improve search engine rankings and organic traffic.</div>
+        </div>
+      </div>
+      <!-- SMM FAQ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">Which social media platforms do you manage?</button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">We manage campaigns on Facebook, Instagram, LinkedIn, and other platforms. Our services include content creation, posting, paid ad campaigns, engagement tracking, and reporting.</div>
+        </div>
+      </div>
+      <!-- Lead Generation FAQ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">How do you generate leads through digital marketing?</button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">We use a combination of SEO, paid ads, landing pages, email campaigns, and social media strategies to generate targeted leads for your business. All campaigns are tracked and optimized for performance.</div>
+        </div>
+      </div>
+      <!-- Analytics FAQ -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">How do you track performance and analytics?</button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">We integrate Google Analytics, Search Console, and other tracking tools to monitor traffic, user behavior, and campaign performance. Regular reports are provided with actionable insights to improve ROI.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+
+<!-- Creative Pricing Section Start - Single Row Layout -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="fw-bold text-primary text-center mb-4">Our Pricing Packages</h2>
+    <div class="row g-4 justify-content-center">
+      <!-- Web Design -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <h5 class="fw-bold text-primary mb-3">Web Design</h5>
+          <p class="fw-bold">Starting from ₹7,999</p>
+          <ul class="list-unstyled text-start mb-0">
+            <li>✅ Business Website - ₹7,999</li>
+            <li>✅ Portfolio Website - ₹8,499</li>
+            <li>✅ Landing Page - ₹6,999</li>
+            <li>✅ E-commerce Website - ₹15,999</li>
+          </ul>
+        </div>
+      </div>
+      <!-- SEO -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <h5 class="fw-bold text-success mb-3">SEO Services</h5>
+          <p class="fw-bold">Monthly Packages</p>
+          <ul class="list-unstyled text-start mb-0">
+            <li>✅ Basic SEO - ₹5,000/month</li>
+            <li>✅ Advanced SEO - ₹8,000/month</li>
+            <li>✅ Local SEO - ₹6,500/month</li>
+            <li>✅ E-commerce SEO - ₹10,000/month</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Social Media Marketing -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <h5 class="fw-bold text-info mb-3">Social Media Marketing</h5>
+          <p class="fw-bold">Monthly Packages</p>
+          <ul class="list-unstyled text-start mb-0">
+            <li>✅ Facebook Marketing - ₹6,000/month</li>
+            <li>✅ Instagram Marketing - ₹6,000/month</li>
+            <li>✅ Content Creation & Posting - ₹4,000/month</li>
+            <li>✅ Paid Campaign Management - ₹8,000/month</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Google Services -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <h5 class="fw-bold text-warning mb-3">Google Services</h5>
+          <p class="fw-bold">Monthly Packages</p>
+          <ul class="list-unstyled text-start mb-0">
+            <li>✅ GMB Setup & Maintenance - ₹5,000/month</li>
+            <li>✅ Google Ads Campaigns - ₹7,000/month</li>
+            <li>✅ Analytics & Search Console - ₹4,500/month</li>
+            <li>✅ Performance Tracking & Reports - ₹3,500/month</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+
+
+    <!-- Diagrammatic Process Flow Section Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 bg-light">
+<div class="container">
+<h2 class="fw-bold text-primary text-center mb-5">Our Process — How We Deliver Results</h2>
+<div class="row g-4 justify-content-center">
+<!-- Web Design Process -->
+<div class="col-lg-3 col-md-6">
+<div class="process-diagram card h-100 border-0 shadow-sm p-4 text-center">
+<h5 class="fw-bold text-primary mb-4">Web Design</h5>
+<div class="process-step mb-3"><span class="step-num">1</span> Requirement Gathering</div>
+<div class="process-step mb-3"><span class="step-num">2</span> Wireframing & Design</div>
+<div class="process-step mb-3"><span class="step-num">3</span> Development</div>
+<div class="process-step mb-3"><span class="step-num">4</span> Testing & Launch</div>
+<div class="process-step mb-3"><span class="step-num">5</span> Maintenance & Updates</div>
+</div>
+</div>
+<!-- SEO Process -->
+<div class="col-lg-3 col-md-6">
+<div class="process-diagram card h-100 border-0 shadow-sm p-4 text-center">
+<h5 class="fw-bold text-success mb-4">SEO Services</h5>
+<div class="process-step mb-3"><span class="step-num">1</span> Website Audit</div>
+<div class="process-step mb-3"><span class="step-num">2</span> Keyword Research</div>
+<div class="process-step mb-3"><span class="step-num">3</span> On-Page Optimization</div>
+<div class="process-step mb-3"><span class="step-num">4</span> Off-Page Optimization</div>
+<div class="process-step mb-3"><span class="step-num">5</span> Reporting & Analysis</div>
+</div>
+</div>
+<!-- Social Media Marketing Process -->
+<div class="col-lg-3 col-md-6">
+<div class="process-diagram card h-100 border-0 shadow-sm p-4 text-center">
+<h5 class="fw-bold text-info mb-4">Social Media Marketing</h5>
+<div class="process-step mb-3"><span class="step-num">1</span> Strategy & Planning</div>
+<div class="process-step mb-3"><span class="step-num">2</span> Content Creation</div>
+<div class="process-step mb-3"><span class="step-num">3</span> Publishing & Scheduling</div>
+<div class="process-step mb-3"><span class="step-num">4</span> Paid Campaigns</div>
+<div class="process-step mb-3"><span class="step-num">5</span> Monitoring & Reporting</div>
+</div>
+</div>
+<!-- Google Services Process -->
+<div class="col-lg-3 col-md-6">
+<div class="process-diagram card h-100 border-0 shadow-sm p-4 text-center">
+<h5 class="fw-bold text-warning mb-4">Google Services</h5>
+<div class="process-step mb-3"><span class="step-num">1</span> GMB Setup & Optimization</div>
+<div class="process-step mb-3"><span class="step-num">2</span> Google Ads Campaigns</div>
+<div class="process-step mb-3"><span class="step-num">3</span> Analytics & Search Console</div>
+<div class="process-step mb-3"><span class="step-num">4</span> Performance Tracking</div>
+<div class="process-step mb-3"><span class="step-num">5</span> Continuous Optimization</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+    </div>
+<!-- pricing sends-->
+
+
+
+
+    <!-- Final Call to Action Start -->
+    <div class="container-fluid  text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+<section class="py-5 text-center bg-primary text-white">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Ready to Grow Your Business Online?</h2>
+    <p class="mb-4">Get a professionally designed website, effective SEO, social media marketing, and Google services — all tailored to your business needs.</p>
+    <a href="#contact" class="btn btn-lg btn-light me-3">Request a Free Quote</a>
+    <a href="#services" class="btn btn-lg btn-outline-light">View All Services</a>
+  </div>
+</section>
+    </div>
+<!-- Final Call to Action End -->
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="index.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1>
+                        </a>
+                        <p class="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">123 Street, New York, USA</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+012 345 67890</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.
+
+						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+						Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
