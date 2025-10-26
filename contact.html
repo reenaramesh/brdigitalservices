@@ -165,28 +165,60 @@
 
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control border-0 bg-light px-4" placeholder="Contact Number" style="height: 55px;">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Location" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Service" style="height: 55px;">
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                        <form id="google-sheet-form">
+      <label>Name:</label>
+      <input type="text" name="name" required><br><br>
+
+      <label>Mobile:</label>
+      <input type="tel" name="mobile" required><br><br>
+
+      <label>Email:</label>
+      <input type="email" name="email" required><br><br>
+
+      <label>Location:</label>
+      <input type="text" name="location" required><br><br>
+
+      <label>Message:</label>
+      <textarea name="message" rows="4"></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="response"></p>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxSoopRRmXB8kmBQoGzB9GPwpxo4r6PBV20GmTtHoNyCeox4cx-Nlghsr4hopUnSmgP/exec';
+
+    document.getElementById('google-sheet-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch(scriptURL, {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/json' },
+        });
+
+        const result = await response.json();
+
+        if (result.result === "success") {
+          document.getElementById('response').innerHTML = "✅ Form submitted successfully!";
+          form.reset();
+        } else {
+          document.getElementById('response').innerHTML = `❌ Error: ${result.message}`;
+        }
+
+      } catch (error) {
+        document.getElementById('response').innerHTML = "❌ Something went wrong!";
+        console.error('Error!', error.message);
+      }
+    });
+    </script>
+
+
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
