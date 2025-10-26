@@ -165,58 +165,10 @@
 
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                        <form id="google-sheet-form">
-      <label>Name:</label>
-      <input type="text" name="name" required><br><br>
 
-      <label>Mobile:</label>
-      <input type="tel" name="mobile" required><br><br>
+                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSecndTsB6OYd-m92hl6mpuseA3JVmTXbOTd34nRMOOY6BAq6A/viewform?embedded=true"
+                    width="640" height="1254" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-      <label>Email:</label>
-      <input type="email" name="email" required><br><br>
-
-      <label>Location:</label>
-      <input type="text" name="location" required><br><br>
-
-      <label>Message:</label>
-      <textarea name="message" rows="4"></textarea><br><br>
-
-      <button type="submit">Submit</button>
-    </form>
-
-    <p id="response"></p>
-
-    <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzLOR5oOF0yRW-UDjs7th3057xLDy7DbyDaGrCn4uto7PCEbLorHVQ4y7TTa2hntAWR/exec';
-
-    document.getElementById('google-sheet-form').addEventListener('submit', async e => {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-
-      try {
-        const response = await fetch(scriptURL, {
-          method: 'POST',
-          body: JSON.stringify(data),
-          headers: { 'Content-Type': 'application/json' },
-        });
-
-        const result = await response.json();
-
-        if (result.result === "success") {
-          document.getElementById('response').innerHTML = "✅ Form submitted successfully!";
-          form.reset();
-        } else {
-          document.getElementById('response').innerHTML = `❌ Error: ${result.message}`;
-        }
-
-      } catch (error) {
-        document.getElementById('response').innerHTML = "❌ Something went wrong!";
-        console.error('Error!', error.message);
-      }
-    });
-    </script>
 
 
                 </div>
